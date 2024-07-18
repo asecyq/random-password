@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>密码生成器</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>密码生成器</h1>
+  <img src="setting.svg" type="svg" class="set">
+  
+  <div id="cst">
+  <div id="btn" onclick="creat()">生成</div>
+  <label>生成的密码数量</label>
+  <input type="range" value="10" max="100" id="nums" onchange="creat()">
+  <p id="num">10</p>
+  <br>
+  
+  <label>生成的密码长度</label>
+  <input type="range" value="4" max="28" id="lens" onchange="creat()">
+  <p id="len">4</p>
+  <br>
+  
+  <label for="tpe">包含的类型</label><br>
+  
+  <label for="tpe">数字</label>
+  <input type="checkbox" id="nump" name="tpe" checked onchange="creat()">
+  
+  <label for="tpe">小写字母</label>
+  <input type="checkbox" id="zmsp" name="tpe" onchange="creat()"><br>
+  
+  <label for="tpe">大写字母</label>
+  <input type="checkbox" id="zmlp" name="tpe" onchange="creat()">
+  
+  <label for="tpe">特殊字符</label>
+  <input type="checkbox" id="stxtp" name="tpe" onchange="creat()">
+  </div>
+  
+  <div id="pad"><p id="up">Nothing on it.</p></div>
+  <script src="main.js"></script>
+</body>
+
+</html>
